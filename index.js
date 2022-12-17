@@ -7,9 +7,9 @@ app.get('/', (req, res) => {
 })
 
 app.get('/app', (req, res) => {
-  res.json({
+  res.send(JSON.stringify({
     success: true,
-  });
+  }));
 })
 
 app.listen(port, () => {
